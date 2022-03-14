@@ -9,9 +9,9 @@
 </div>
   
  ## 🚀 Desafios
-  - #### Criação da estrutura de dados pilha
-  - #### Criação de um algoritmo que faça a checagem se uma palavra passada é um palíndromo 
-  - #### Criação de uma tela de login
+  - #### [Criação da estrutura de dados pilha](https://github.com/codecampos/swift-training-godev/tree/main/challenges/palindrome/Palindrome.playground)
+  - #### [Criação de um algoritmo que faça a checagem se uma palavra passada é um palíndromo](https://github.com/codecampos/swift-training-godev/tree/main/challenges/stack%20data%20structure)
+  - #### [Criação de uma tela de login](https://github.com/codecampos/swift-training-godev/tree/main/challenges/purple%20music%20school)
     - A minha ideia foi criar uma tela de login para uma escola de música fictícia chamada Purple Music School: 
        - Funcionalidades: 
           
