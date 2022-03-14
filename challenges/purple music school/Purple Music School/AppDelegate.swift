@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  iOSLoginScreen
+//  Purple Music Store
 //
 //  Created by Idwall Go Dev 013 on 13/03/22.
 //

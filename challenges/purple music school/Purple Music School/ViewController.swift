@@ -23,19 +23,19 @@ class ViewController: UIViewController {
         let user = "devcodecampos@gmail.com"
         let pass = "12345678"
             
-        print(email.isValidEmail())
-        if(user == email && pass == password){
+        if(email.isValidEmail()){
+            if(user == email && pass == password){
         
-        let alert = UIAlertController(title: "Login", message: "Autenticada com sucesso", preferredStyle: .alert)
-        
-        alert.addAction(UIAlertAction.init(title: "Confirmar", style: .default, handler: { action in
-            print("Cliquei no confirmar")
-        }))
-        
-            present(alert, animated: true, completion: nil)
+                let alert = UIAlertController(title: "Seja Bem vindo", message: "Autenticação realizada com sucesso", preferredStyle: .alert)
+                
+                alert.addAction(UIAlertAction.init(title: "Confirmar", style: .default, handler: { action in
+                    print("Cliquei no confirmar")
+                }))
+                
+                    present(alert, animated: true, completion: nil)
             
         } else {
-            let alert = UIAlertController(title: "Login", message: "Erro na autenticacao, tentar novamente", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Login Incorreto", message: "Erro na autenticação, tentar novamente", preferredStyle: .alert)
             
             alert.addAction(UIAlertAction.init(title: "Confirmar", style: .default, handler: { action in
                 print("Cliquei no confirmar")
@@ -43,9 +43,18 @@ class ViewController: UIViewController {
             
                 present(alert, animated: true, completion: nil)
         }
-       
+        } else {
+            let alert = UIAlertController(title: "Login Incorreto", message: "Erro na autenticação, tentar novamente", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction.init(title: "Confirmar", style: .default, handler: { action in
+                print("Cliquei no confirmar")
+            }))
+            
+                present(alert, animated: true, completion: nil)
+        }
+        }
     }
-    }}
+    }
 
 extension String {
     

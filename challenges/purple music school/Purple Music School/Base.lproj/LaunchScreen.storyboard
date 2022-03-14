@@ -16,8 +16,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Purple Music School" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cn-gu-sb5">
-                                <rect key="frame" x="20" y="344" width="374" height="143.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
+                                <rect key="frame" x="16" y="344" width="382" height="50.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="42"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -25,11 +25,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.44313728810000003" green="0.34509804840000002" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8cn-gu-sb5" secondAttribute="trailing" constant="20" id="5JC-3s-Xgf"/>
-                            <constraint firstItem="8cn-gu-sb5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6bb-ja-VpG"/>
-                            <constraint firstItem="8cn-gu-sb5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9z3-ia-4yQ"/>
-                            <constraint firstItem="8cn-gu-sb5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="300" id="cxR-kL-Xg6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8cn-gu-sb5" secondAttribute="trailing" constant="20" id="wIf-LX-Xm1"/>
+                            <constraint firstItem="8cn-gu-sb5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="300" id="Cze-ra-Vb8"/>
+                            <constraint firstItem="8cn-gu-sb5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qhu-uT-Zak"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8cn-gu-sb5" secondAttribute="trailing" constant="16" id="u50-h8-DuW"/>
                         </constraints>
                     </view>
                 </viewController>

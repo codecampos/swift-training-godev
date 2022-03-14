@@ -66,7 +66,7 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ee-N8-iKA">
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ee-N8-iKA">
                                 <rect key="frame" x="16" y="544" width="382" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Entrar">
@@ -77,6 +77,35 @@
                                     <action selector="autenticator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0mo-59-fZU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOV-hV-yZm">
+                                <rect key="frame" x="16" y="605" width="382" height="32"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Esqueci minha senha">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                    <color key="baseForegroundColor" red="0.44313728810000003" green="0.34509804840000002" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="hJ7-07-GEA">
+                                <rect key="frame" x="16" y="820" width="382" height="32"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORH-CD-kdX">
+                                        <rect key="frame" x="0.0" y="0.0" width="165.5" height="32"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Não tem uma conta?">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                            <color key="baseForegroundColor" red="0.44313728810000003" green="0.34509804840000002" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpa-HH-VZk">
+                                        <rect key="frame" x="319" y="0.0" width="63" height="32"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Ajuda">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                            <color key="baseForegroundColor" red="0.44313728810000003" green="0.34509804840000002" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -86,10 +115,16 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1ee-N8-iKA" secondAttribute="trailing" constant="16" id="4Kl-Ib-adF"/>
                             <constraint firstItem="1ee-N8-iKA" firstAttribute="top" secondItem="YUJ-5v-wgT" secondAttribute="bottom" constant="26" id="91h-8H-XtJ"/>
                             <constraint firstItem="YUJ-5v-wgT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="AFO-mk-GWL"/>
+                            <constraint firstItem="QOV-hV-yZm" firstAttribute="top" secondItem="1ee-N8-iKA" secondAttribute="bottom" constant="30" id="DcN-Sw-taa"/>
+                            <constraint firstItem="hJ7-07-GEA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ic1-r6-cF9"/>
+                            <constraint firstItem="QOV-hV-yZm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="KJK-0l-adQ"/>
                             <constraint firstItem="dVD-Gz-uqg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="V63-Al-E01"/>
                             <constraint firstAttribute="trailing" secondItem="dVD-Gz-uqg" secondAttribute="trailing" constant="16" id="Vba-A4-tPl"/>
+                            <constraint firstAttribute="trailing" secondItem="hJ7-07-GEA" secondAttribute="trailing" constant="16" id="gKa-C5-J9G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QOV-hV-yZm" secondAttribute="trailing" constant="16" id="hEy-QI-T9O"/>
                             <constraint firstItem="YUJ-5v-wgT" firstAttribute="top" secondItem="dVD-Gz-uqg" secondAttribute="bottom" constant="70" id="n10-0y-5q6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YUJ-5v-wgT" secondAttribute="trailing" constant="16" id="qbc-Cr-hey"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hJ7-07-GEA" secondAttribute="bottom" constant="10" id="vK0-qu-f5D"/>
                         </constraints>
                     </view>
                     <connections>
